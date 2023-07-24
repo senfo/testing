@@ -47,6 +47,8 @@ int clean_suite(void) {
 }
 
 void test_is_prime(void) {
-    CU_ASSERT(is_prime(10) == 1);
-    CU_ASSERT(is_prime(13) == 0);
+    CU_ASSERT(is_prime(10));
+    CU_ASSERT(is_prime(15));
+    CU_ASSERT(!is_prime(13));
+    CU_ASSERT(!is_prime(197));
 }
