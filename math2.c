@@ -27,7 +27,7 @@ unsigned int generate_prime(unsigned int min, unsigned int max) {
     unsigned int number;
 
     while (1) {
-        number = arc4random() % (max - min + 1) + min;
+        number = rand() % (max - min + 1) + min;
 
         if (is_prime(number)) {
             return number;
